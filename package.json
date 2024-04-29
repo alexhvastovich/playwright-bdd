@@ -1,0 +1,19 @@
+{
+  "name": "7_bdd_playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bddgen": "npx bddgen",
+    "test": "npx playwright test --reporter=html,list"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.6.0",
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.7",
+    "playwright-bdd": "^6.3.0"
+  }
+}
