@@ -22,8 +22,12 @@ npm i cross-env -D
 8. clean auto generated folder prior to run
 npm i rimraf -D
 
-to generate step definition:
+9. to generate step definition:
 npx bddgen
+
+10. take screenshots:
+https://playwright.dev/docs/test-snapshots 
+// will need to remove rimraf for generated folder
 
 
 library link:
