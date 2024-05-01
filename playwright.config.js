@@ -1,10 +1,14 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
 import { defineBddConfig } from 'playwright-bdd';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const testDir = defineBddConfig({
-  paths: ['features/**/*.feature'],
-  require: ['steps/**/*.js']
+  importTestFrom: 'tests/fixtures/fixture.js',
+  paths: ['tests/features/**/*.feature'],
+  require: ['tests/steps/**/*.js']
 })
 
 /**
@@ -35,6 +39,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    headless: true,
   },
 
   /* Configure projects for major browsers */

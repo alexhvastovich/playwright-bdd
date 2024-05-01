@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf .features-gen",
     "bddgen": "npx bddgen",
-    "test": "npx playwright test --reporter=html,list"
+    "playwright-test": "npx playwright test --reporter=html,list",
+    "test": "npm run clean && npm run bddgen && npm run playwright-test"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,8 @@
     "@cucumber/cucumber": "^10.6.0",
     "@playwright/test": "^1.43.1",
     "@types/node": "^20.12.7",
-    "playwright-bdd": "^6.3.0"
+    "dotenv": "^16.4.5",
+    "playwright-bdd": "^6.3.0",
+    "rimraf": "^5.0.5"
   }
 }

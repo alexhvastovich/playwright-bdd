@@ -1,0 +1,13 @@
+{
+    "my_account_btn": {
+        "role": "button",
+        "name": "My account"
+    },
+    "email_box": {
+        "placeholder": "E-Mail Address"
+    },
+    "password_box": {
+        "placeholder": "Password"
+    },
+    "submit_btn": "input[value='Login']"
+}
